@@ -8,3 +8,15 @@ canvas {
   display: block;
   margin: 0 auto;
 }
+
+.center-text {
+  text-align: center;
+}
+
+.mt-5 {
+  margin-top: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 10px;
+}

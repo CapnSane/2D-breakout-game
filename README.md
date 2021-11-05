@@ -45,6 +45,7 @@ I will practice the basics of using the [`<canvas>`](https://developer.mozilla.o
 Each topic will be studied in 2 days, one day for reading and developing and another for practicing the concepts. Thus, the whole tutorial will be completed in 20 days.
 
 1. ~~Create the Canvas and draw on it~~
+   <img src="figures/1.png">
 1. Move the ball
 1. Bounce off the walls
 1. Paddle and keyboard controls
