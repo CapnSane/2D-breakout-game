@@ -42,7 +42,7 @@ I will practice the basics of using the [`<canvas>`](https://developer.mozilla.o
 
 ## Schedule
 
-Each topic will be studied in 2 days, one day for reading and developing and another for practicing the concepts. Thus, the whole tutorial will be completed in 20 days.
+Each topic will be studied in 2 days, one day for reading and developing and another for practicing the concepts. Thus, the whole tutorial will be completed in 20 days or less.
 
 <p> 1. <strike>Create the Canvas and draw on it</strike></p>
 <img src="figures/1.png"/>
