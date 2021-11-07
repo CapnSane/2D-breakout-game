@@ -56,7 +56,12 @@ Each topic will be studied in 2 days, one day for reading and developing and ano
 <br>
 <br>
 
-3. Bounce off the walls
+<p>3. <strike>Bounce off the walls</strike></p>
+<img src="figures/3.gif"/>
+
+<br>
+<br>
+
 4. Paddle and keyboard controls
 5. Game over
 6. Build the brick field
@@ -64,8 +69,8 @@ Each topic will be studied in 2 days, one day for reading and developing and ano
 8. Track the score and win
 9. Mouse controls
 10. Finishing up
-<!-- <p>3. Bounce off the walls</p>
-<p>4. Paddle and keyboard controls</p>
+
+<!-- <p>4. Paddle and keyboard controls</p>
 <p>5. Game over</p>
 <p>6. Build the brick field</p>
 <p>7. Collision detection</p>
