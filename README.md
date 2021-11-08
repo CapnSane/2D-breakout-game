@@ -62,7 +62,12 @@ Each topic will be studied in 2 days, one day for reading and developing and ano
 <br>
 <br>
 
-4. Paddle and keyboard controls
+<p>4. <strike>Paddle and keyboard controls</strike></p>
+<img src="figures/4.gif"/>
+
+<br>
+<br>
+
 5. Game over
 6. Build the brick field
 7. Collision detection
@@ -70,12 +75,40 @@ Each topic will be studied in 2 days, one day for reading and developing and ano
 9. Mouse controls
 10. Finishing up
 
-<!-- <p>4. Paddle and keyboard controls</p>
-<p>5. Game over</p>
-<p>6. Build the brick field</p>
-<p>7. Collision detection</p>
-<p>8. Track the score and win</p>
-<p>9. Mouse controls</p>
-<p>10. Finishing up</p> -->
+<!-- <p>5. <strike>Game over</strike></p>
+<img src="figures/5.gif"/>
+
+<br>
+<br> -->
+
+<!-- <p>6. <strike>Build the brick field</strike></p>
+<img src="figures/6.gif"/>
+
+<br>
+<br> -->
+
+<!-- <p>7. <strike>Collision detection</strike></p>
+<img src="figures/7.gif"/>
+
+<br>
+<br> -->
+
+<!-- <p>8. <strike>Track the score and win</strike></p>
+<img src="figures/8.gif"/>
+
+<br>
+<br> -->
+
+<!-- <p>9. <strike>Mouse controls</strike></p>
+<img src="figures/9.gif"/>
+
+<br>
+<br> -->
+
+<!-- <p>10. <strike>Finishing up</strike></p>
+<img src="figures/10.gif"/>
+
+<br>
+<br> -->
 
 ## So, let's start
