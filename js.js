@@ -65,6 +65,9 @@ function draw() {
     dy = -dy;
   } else if (y + dy > canvas.height - ballRadius) {
     if (x > paddleX && x < paddleX + paddleWidth) {
+      difficulty += 1;
+      dy = dy + difficulty;
+      dx = dx * -1 + difficulty;
       dy = -dy;
     } else {
       alert('GAME OVER! LOOOOOSEEEERRR!!!');
