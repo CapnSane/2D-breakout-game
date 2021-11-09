@@ -44,42 +44,41 @@ I will practice the basics of using the [`<canvas>`](https://developer.mozilla.o
 
 Each topic will be studied in 2 days, one day for reading and developing and another for practicing the concepts. Thus, the whole tutorial will be completed in 20 days or less.
 
-<p> 1. <strike>Create the Canvas and draw on it</strike></p>
+<p> 1. <strike>Create the Canvas and draw on it</strike> </p>
 <img src="figures/1.png"/>
 
 <br>
 <br>
 
-<p> 2. <strike>Move the ball</strike></p>
+<p> 2. <strike>Move the ball</strike> </p>
 <img src="figures/2.gif"/>
 
 <br>
 <br>
 
-<p>3. <strike>Bounce off the walls</strike></p>
+<p> 3. <strike>Bounce off the walls</strike> </p>
 <img src="figures/3.gif"/>
 
 <br>
 <br>
 
-<p>4. <strike>Paddle and keyboard controls</strike></p>
+<p> 4. <strike>Paddle and keyboard controls</strike> </p>
 <img src="figures/4.gif"/>
 
 <br>
 <br>
 
-5. Game over
+<p> 5. <strike>Game over</strike> </p>
+<img src="figures/5.gif"/>
+
+<br>
+<br>
+
 6. Build the brick field
 7. Collision detection
 8. Track the score and win
 9. Mouse controls
 10. Finishing up
-
-<!-- <p>5. <strike>Game over</strike></p>
-<img src="figures/5.gif"/>
-
-<br>
-<br> -->
 
 <!-- <p>6. <strike>Build the brick field</strike></p>
 <img src="figures/6.gif"/>
