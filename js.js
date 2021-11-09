@@ -8,7 +8,7 @@ let x = canvas.width / 2;
 let y = canvas.height / 2;
 
 let dx = 1;
-let dy = -2;
+let dy = -3;
 
 let paddleHeight = 10;
 let paddleWidth = 75;
@@ -65,9 +65,9 @@ function draw() {
     dy = -dy;
   } else if (y + dy > canvas.height - ballRadius) {
     if (x > paddleX && x < paddleX + paddleWidth) {
-      difficulty += 1;
+      difficulty += 0.2;
       dy = dy + difficulty;
-      dx = dx * -1 + difficulty;
+      dx = dx * -1 * Math.floor(Math.random() * 3) + difficulty;
       dy = -dy;
     } else {
       alert('GAME OVER! LOOOOOSEEEERRR!!!');
