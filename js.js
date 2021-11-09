@@ -3,6 +3,7 @@ let ctx = canvas.getContext('2d');
 
 let ballRadius = 10;
 let difficulty = 1;
+let counts = 0;
 
 let x = canvas.width / 2;
 let y = canvas.height / 2;
@@ -60,17 +61,17 @@ function draw() {
   if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
     dx = -dx;
   }
-
   if (y + dy < ballRadius) {
     dy = -dy;
   } else if (y + dy > canvas.height - ballRadius) {
     if (x > paddleX && x < paddleX + paddleWidth) {
+      counts += 1;
       difficulty += 0.2;
       dy = dy + difficulty;
-      dx = dx * -1 * Math.floor(Math.random() * 3) + difficulty;
+      dx = dx * -1 * Math.floor(Math.random() * 2) + difficulty;
       dy = -dy;
     } else {
-      alert('GAME OVER! LOOOOOSEEEERRR!!!');
+      alert('GAME OVER! YOUR SCORE IS: ' + counts);
       document.location.reload();
       clearInterval(interval);
     }

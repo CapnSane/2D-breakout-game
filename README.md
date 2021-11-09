@@ -70,6 +70,8 @@ Each topic will be studied in 2 days, one day for reading and developing and ano
 
 <p> 5. <strike>Game over</strike> </p>
 <img src="figures/5.gif"/>
+<p> 5 (Bonus). <strike>Increasing the difficulty and creating a SCORE</strike> </p>
+<img src="figures/5a.gif"/>
 
 <br>
 <br>
