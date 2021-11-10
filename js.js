@@ -97,7 +97,7 @@ function draw() {
   if (y + dy < ballRadius) {
     dy = -dy;
   } else if (y + dy > canvas.height - ballRadius) {
-    if (x > paddleX && x < paddleX + paddleWidth) {
+    if (x > paddleX - 10 && x < paddleX + paddleWidth + 10) {
       counts += 1;
       difficulty += 0.2;
       dy = dy + difficulty;
