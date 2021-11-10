@@ -78,9 +78,9 @@ function drawBricks() {
       bricks[c][r].y = brickY;
       ctx.beginPath();
       ctx.rect(brickX, brickY, brickWidth, brickHeight);
-      ctx.fillStyle = `rgb(${Math.floor(Math.random() * 250)}, ${Math.floor(
-        Math.random() * 250
-      )}, ${Math.floor(Math.random() * 250)})`;
+      ctx.fillStyle = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
+        Math.random() * 256
+      )}, ${Math.floor(Math.random() * 256)})`;
       ctx.fill();
       ctx.closePath();
     }
