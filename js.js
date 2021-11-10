@@ -18,9 +18,9 @@ let paddleX = (canvas.width - paddleWidth) / 2;
 let rightPressed = false;
 let leftPressed = false;
 
-let brickRowCount = 3;
-let brickColumnCount = 5;
-let brickWidth = 75;
+let brickRowCount = 5;
+let brickColumnCount = 9;
+let brickWidth = 40;
 let brickHeight = 20;
 let brickPadding = 10;
 let brickOffsetTop = 30;
@@ -78,7 +78,9 @@ function drawBricks() {
       bricks[c][r].y = brickY;
       ctx.beginPath();
       ctx.rect(brickX, brickY, brickWidth, brickHeight);
-      ctx.fillStyle = '#0095DD';
+      ctx.fillStyle = `rgb(${Math.floor(Math.random() * 250)}, ${Math.floor(
+        Math.random() * 250
+      )}, ${Math.floor(Math.random() * 250)})`;
       ctx.fill();
       ctx.closePath();
     }
