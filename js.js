@@ -53,10 +53,19 @@ function keyUpHandler(e) {
   }
 }
 
+function getRndColor() {
+  var r = (255 * Math.random()) | 0,
+    g = (255 * Math.random()) | 0,
+    b = (255 * Math.random()) | 0;
+  return 'rgb(' + r + ',' + g + ',' + b + ')';
+}
+
+colour = getRndColor();
+
 function drawBall() {
   ctx.beginPath();
   ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-  ctx.fillStyle = 'rgb(0, 149, 221)';
+  ctx.fillStyle = colour;
   ctx.fill();
   ctx.closePath();
 }
@@ -89,6 +98,7 @@ function drawBricks() {
     }
   }
 }
+let jorge = 0;
 
 function collisionDetection() {
   for (var c = 0; c < brickColumnCount; c++) {
@@ -101,6 +111,8 @@ function collisionDetection() {
           y > b.y &&
           y < b.y + brickHeight
         ) {
+          jorge += 1;
+          colour = getRndColor();
           dy = -dy;
           b.status = 0;
         }
