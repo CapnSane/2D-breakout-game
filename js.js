@@ -18,13 +18,13 @@ let paddleX = (canvas.width - paddleWidth) / 2;
 let rightPressed = false;
 let leftPressed = false;
 
-let brickRowCount = 5;
-let brickColumnCount = 9;
-let brickWidth = 40;
+let brickRowCount = 3;
+let brickColumnCount = 6;
+let brickWidth = 75;
 let brickHeight = 20;
-let brickPadding = 10;
+let brickPadding = 5;
 let brickOffsetTop = 30;
-let brickOffsetLeft = 30;
+let brickOffsetLeft = 15;
 
 let bricks = [];
 for (let c = 0; c < brickColumnCount; c++) {
@@ -98,7 +98,7 @@ function drawBricks() {
     }
   }
 }
-let jorge = 0;
+let brickCount = 0;
 
 function collisionDetection() {
   for (var c = 0; c < brickColumnCount; c++) {
@@ -111,7 +111,7 @@ function collisionDetection() {
           y > b.y &&
           y < b.y + brickHeight
         ) {
-          jorge += 1;
+          brickCount += 1;
           colour = getRndColor();
           dy = -dy;
           b.status = 0;
@@ -127,7 +127,6 @@ function draw() {
   drawPaddle();
   drawBricks();
   collisionDetection();
-
   if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
     dx = -dx;
   }
@@ -141,7 +140,13 @@ function draw() {
       dx = dx * -1 * Math.floor(Math.random() * 2) + difficulty;
       dy = -dy;
     } else {
-      alert('GAME OVER! YOUR SCORE IS: ' + counts);
+      alert(
+        'GAME OVER! YOUR SCORE IS: ' +
+          counts +
+          '. You broke ' +
+          brickCount +
+          ' brick(s)!'
+      );
       document.location.reload();
       clearInterval(interval);
     }
