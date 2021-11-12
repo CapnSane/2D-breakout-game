@@ -88,15 +88,14 @@ Each topic will be studied in 2 days, one day for reading and developing and ano
 <br>
 <br>
 
-8. Track the score and win
-9. Mouse controls
-10. Finishing up
-
-<!-- <p>8. <strike>Track the score and win</strike></p>
+<p>8. <strike>Track the score and win</strike></p>
 <img src="figures/8.gif"/>
 
 <br>
-<br> -->
+<br>
+
+9. Mouse controls
+10. Finishing up
 
 <!-- <p>9. <strike>Mouse controls</strike></p>
 <img src="figures/9.gif"/>
