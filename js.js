@@ -98,7 +98,6 @@ function drawBricks() {
     }
   }
 }
-let brickCount = 0;
 
 function collisionDetection() {
   for (var c = 0; c < brickColumnCount; c++) {
@@ -111,14 +110,27 @@ function collisionDetection() {
           y > b.y &&
           y < b.y + brickHeight
         ) {
-          brickCount += 1;
+          score += 1;
           colour = getRndColor();
           dy = -dy;
           b.status = 0;
+          if (score == brickRowCount * brickColumnCount) {
+            alert('YOU WIN, CONGRATS!');
+            document.location.reload();
+            clearInterval(interval); // Needed for Chrome to end game
+          }
         }
       }
     }
   }
+}
+
+let score = 0;
+
+function drawScore() {
+  ctx.font = '16px Arial';
+  ctx.fillStyle = '#0095DD';
+  ctx.fillText('Score: ' + score, 8, 20);
 }
 
 function draw() {
@@ -127,6 +139,8 @@ function draw() {
   drawPaddle();
   drawBricks();
   collisionDetection();
+  drawScore();
+
   if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
     dx = -dx;
   }
@@ -144,7 +158,7 @@ function draw() {
         'GAME OVER! YOUR SCORE IS: ' +
           counts +
           '. You broke ' +
-          brickCount +
+          score +
           ' brick(s)!'
       );
       document.location.reload();
