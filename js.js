@@ -115,7 +115,13 @@ function collisionDetection() {
           dy = -dy;
           b.status = 0;
           if (score == brickRowCount * brickColumnCount) {
-            alert('YOU WIN, CONGRATS!');
+            alert(
+              'YOU WIN, CONGRATS! YOUR SCORE IS: ' +
+                score +
+                '. You slapped the ball ' +
+                counts +
+                ' time(s)!'
+            );
             document.location.reload();
             clearInterval(interval); // Needed for Chrome to end game
           }
