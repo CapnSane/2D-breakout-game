@@ -8,8 +8,12 @@ let counts = 0;
 let x = canvas.width / 2;
 let y = canvas.height / 2;
 
-let dx = 1;
+let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+
+let dx = plusOrMinus * Math.random() * 5;
 let dy = -3;
+
+console.log(dx);
 
 let paddleHeight = 10;
 let paddleWidth = 75;
@@ -54,9 +58,10 @@ function keyUpHandler(e) {
 }
 
 function getRndColor() {
-  var r = (255 * Math.random()) | 0,
-    g = (255 * Math.random()) | 0,
-    b = (255 * Math.random()) | 0;
+  let maxcolour = 200;
+  let r = (maxcolour * Math.random()) | 0,
+    g = (maxcolour * Math.random()) | 0,
+    b = (maxcolour * Math.random()) | 0;
   return 'rgb(' + r + ',' + g + ',' + b + ')';
 }
 
@@ -157,7 +162,7 @@ function draw() {
       counts += 1;
       difficulty += 0.2;
       dy = dy + difficulty;
-      dx = dx * -1 * Math.floor(Math.random() * 2) + difficulty;
+      dx = dx * plusOrMinus + difficulty * 2;
       dy = -dy;
     } else {
       alert(
