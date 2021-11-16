@@ -13,8 +13,6 @@ let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
 let dx = plusOrMinus * Math.random() * 5;
 let dy = -3;
 
-console.log(dx);
-
 let paddleHeight = 10;
 let paddleWidth = 75;
 let paddleX = (canvas.width - paddleWidth) / 2;
