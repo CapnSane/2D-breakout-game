@@ -4,7 +4,7 @@
 }
 
 canvas {
-  background: #eee;
+  background: rgb(238, 238, 238);
   display: block;
   margin: 0 auto;
 }

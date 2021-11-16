@@ -58,7 +58,7 @@ function keyUpHandler(e) {
 }
 
 function mouseMoveHandler(e) {
-  var relativeX = e.clientX - canvas.offsetLeft;
+  let relativeX = e.clientX - canvas.offsetLeft;
   if (relativeX > 0 && relativeX < canvas.width) {
     paddleX = relativeX - paddleWidth / 2;
   }
@@ -112,9 +112,9 @@ function drawBricks() {
 }
 
 function collisionDetection() {
-  for (var c = 0; c < brickColumnCount; c++) {
-    for (var r = 0; r < brickRowCount; r++) {
-      var b = bricks[c][r];
+  for (let c = 0; c < brickColumnCount; c++) {
+    for (let r = 0; r < brickRowCount; r++) {
+      let b = bricks[c][r];
       if (b.status == 1) {
         if (
           x > b.x &&
@@ -123,7 +123,11 @@ function collisionDetection() {
           y < b.y + brickHeight
         ) {
           score += 1;
-          colour = getRndColor();
+          if (getRndColor() == 'rgb(238, 238, 238)') {
+            colour = 'rgb(0, 0, 0)';
+          } else {
+            colour = getRndColor();
+          }
           dy = -dy;
           b.status = 0;
           if (score == brickRowCount * brickColumnCount) {
