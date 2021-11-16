@@ -76,34 +76,33 @@ Each topic will be studied in 2 days, one day for reading and developing and ano
 <br>
 <br>
 
-<p>6. <strike>Build the brick field</strike></p>
+<p> 6. <strike>Build the brick field</strike> </p>
 <img src="figures/6.gif"/>
 
 <br>
 <br>
 
-<p>7. <strike>Collision detection</strike></p>
+<p> 7. <strike>Collision detection</strike> </p>
 <img src="figures/7.gif"/>
 
 <br>
 <br>
 
-<p>8. <strike>Track the score and win</strike></p>
+<p> 8. <strike>Track the score and win</strike> </p>
 <img src="figures/8.gif"/>
 
 <br>
 <br>
 
-9. Mouse controls
-10. Finishing up
-
-<!-- <p>9. <strike>Mouse controls</strike></p>
+<p> 9. <strike>Mouse controls</strike> </p>
 <img src="figures/9.gif"/>
 
 <br>
-<br> -->
+<br>
 
-<!-- <p>10. <strike>Finishing up</strike></p>
+10. Finishing up
+
+<!-- <p> 10. <strike>Finishing up</strike></p>
 <img src="figures/10.gif"/>
 
 <br>
