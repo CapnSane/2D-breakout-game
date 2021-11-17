@@ -44,6 +44,8 @@ I will practice the basics of using the [`<canvas>`](https://developer.mozilla.o
 
 Each topic will be studied in 2 days, one day for reading and developing and another for practicing the concepts. Thus, the whole tutorial will be completed in 20 days or less.
 
+#### So, let's start
+
 <p> 1. <strike>Create the Canvas and draw on it</strike> </p>
 <img src="figures/1.png"/>
 
@@ -106,4 +108,18 @@ Each topic will be studied in 2 days, one day for reading and developing and ano
 <br>
 <br>
 
-## So, let's start
+## Finished!
+
+I've been learning many canvas features this last days, and I learned how to draw and make movements using canvas. Now it's time to improve the game and code a new one from scratch.
+
+This game can be improved adding movement angle depending on the paddle side the ball hits it, if the ball hits centre to left side the ball movement is to the left, if the ball hits centre to right the ball moves to the right.
+
+Another thing is creating a start button, that makes the start game only when we click the button.
+
+Changing the number of bricks or giving "lives" to the bricks is another game improvement.
+
+Today the game has normal to hard difficulty, but it's possible creating a difficulty button in the very game beginning as well.
+
+### Canvas learning
+
+Canvas is not something hard to learning, but depending on what we want to do it's not so simple. Because of this project I decided draw the logo of an online school that taught me the basics of JavaScript, CSS, and HTML, the Ingate Educa logo. It was too hard, specially because I needed drawing each Bézier curve one by one. It's not impossible, but... it's not the best thing to do, I did it only for learning, because we have many tools and things better than canvas today.
