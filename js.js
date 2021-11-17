@@ -7,12 +7,12 @@ let ballRadius = 10;
 let difficulty = 1;
 let counts = 0;
 
+let plusOrMinus = Math.round(Math.random()) * 2 - 1;
+
 let x = canvas.width / 2;
 let y = canvas.height / 2;
 
-let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
-
-let dx = plusOrMinus * Math.random() * 5;
+let dx = (Math.round(Math.random()) * 2 - 1) * Math.random() * 3;
 let dy = -3;
 
 let paddleHeight = 10;
@@ -147,7 +147,6 @@ function collisionDetection() {
                 ' time(s)!'
             );
             document.location.reload();
-            clearInterval(interval); // Needed for Chrome to end game
           }
         }
       }
@@ -182,7 +181,7 @@ function draw() {
       counts += 1;
       difficulty += 0.2;
       dy = dy + difficulty;
-      dx = dx * plusOrMinus + difficulty * 2;
+      dx = dx * (Math.round(Math.random()) * 2 - 1) + difficulty * 2;
       dy = -dy;
     } else {
       lives--;
@@ -195,11 +194,10 @@ function draw() {
             ' brick(s)!'
         );
         document.location.reload();
-        clearInterval(interval);
       } else {
         x = canvas.width / 2;
         y = canvas.height - 30;
-        dx = 2;
+        dx = 2 * (Math.round(Math.random()) * 2 - 1);
         dy = -2;
         paddleX = (canvas.width - paddleWidth) / 2;
       }
@@ -220,6 +218,7 @@ function draw() {
 
   x += dx;
   y += dy;
+  requestAnimationFrame(draw);
 }
 
-let interval = setInterval(draw, 15);
+draw();
