@@ -100,12 +100,10 @@ Each topic will be studied in 2 days, one day for reading and developing and ano
 <br>
 <br>
 
-10. Finishing up
-
-<!-- <p> 10. <strike>Finishing up</strike></p>
+<p> 10. <strike>Finishing up</strike></p>
 <img src="figures/10.gif"/>
 
 <br>
-<br> -->
+<br>
 
 ## So, let's start
