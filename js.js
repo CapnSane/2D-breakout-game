@@ -1,6 +1,8 @@
 let canvas = document.getElementById('myCanvas');
 let ctx = canvas.getContext('2d');
 
+let lives = 3;
+
 let ballRadius = 10;
 let difficulty = 1;
 let counts = 0;
@@ -62,6 +64,12 @@ function mouseMoveHandler(e) {
   if (relativeX > 0 && relativeX < canvas.width) {
     paddleX = relativeX - paddleWidth / 2;
   }
+}
+
+function drawLives() {
+  ctx.font = '16px Arial';
+  ctx.fillStyle = '#0095DD';
+  ctx.fillText('Lives: ' + lives, canvas.width - 65, 20);
 }
 
 function getRndColor() {
@@ -157,6 +165,7 @@ function drawScore() {
 
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawLives();
   drawBall();
   drawPaddle();
   drawBricks();
@@ -176,15 +185,24 @@ function draw() {
       dx = dx * plusOrMinus + difficulty * 2;
       dy = -dy;
     } else {
-      alert(
-        'GAME OVER! YOUR SCORE IS: ' +
-          counts +
-          '. You broke ' +
-          score +
-          ' brick(s)!'
-      );
-      document.location.reload();
-      clearInterval(interval);
+      lives--;
+      if (!lives) {
+        alert(
+          'GAME OVER! YOUR SCORE IS: ' +
+            counts +
+            '. You broke ' +
+            score +
+            ' brick(s)!'
+        );
+        document.location.reload();
+        clearInterval(interval);
+      } else {
+        x = canvas.width / 2;
+        y = canvas.height - 30;
+        dx = 2;
+        dy = -2;
+        paddleX = (canvas.width - paddleWidth) / 2;
+      }
     }
   }
 
